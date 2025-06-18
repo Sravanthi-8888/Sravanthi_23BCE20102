@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Election</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Register Election</h2>
+    <form action="registerElection" method="post">
+      <input type="text" name="organization" placeholder="Organization Name" required>
+      <input type="text" name="electionName" placeholder="Election Name" required>
+      <input type="date" name="date" required>
+
+      <textarea name="candidates" rows="4" placeholder="Enter candidates (one per line)" required></textarea>
+      <textarea name="voters" rows="4" placeholder="Enter voters (one per line)" required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+    <br>
+    <a href="dashboard.html">⬅️ Back to Dashboard</a>
+  </div>
+</body>
+</html>
